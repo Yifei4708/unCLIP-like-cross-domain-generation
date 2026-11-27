@@ -1,0 +1,157 @@
+{
+  "seed": 2026,
+  "random_stream_seeds": {
+    "split_mnist": 479243620,
+    "split_svhn": 454024514,
+    "pairs_train": 1818751028,
+    "pairs_val": 2288458700,
+    "pairs_test": 2115331525,
+    "prompts_mnist": 2666256175,
+    "prompts_svhn": 975381835,
+    "eval_mnist": 2535166222,
+    "eval_svhn": 1079577930,
+    "figures_mnist": 3715024065,
+    "figures_svhn": 2056590929
+  },
+  "future_training_seeds": [
+    2026,
+    2027
+  ],
+  "split_policy": "uniform permutation, ceil(10% train) validation; not stratified",
+  "index_space": "original torchvision train for train/val; official test for test",
+  "pair_columns": [
+    "mnist_index",
+    "svhn_index"
+  ],
+  "pair_policy": "20 distinct partners per source, union of both directions; duplicates kept",
+  "pixel_range": [
+    0,
+    1
+  ],
+  "svhn_extra": false,
+  "counts": {
+    "mnist": {
+      "train": {
+        "size": 54000,
+        "digit_counts": [
+          5372,
+          6085,
+          5379,
+          5499,
+          5249,
+          4842,
+          5313,
+          5628,
+          5288,
+          5345
+        ]
+      },
+      "val": {
+        "size": 6000,
+        "digit_counts": [
+          551,
+          657,
+          579,
+          632,
+          593,
+          579,
+          605,
+          637,
+          563,
+          604
+        ]
+      },
+      "test": {
+        "size": 10000,
+        "digit_counts": [
+          980,
+          1135,
+          1032,
+          1010,
+          982,
+          892,
+          958,
+          1028,
+          974,
+          1009
+        ]
+      }
+    },
+    "svhn": {
+      "train": {
+        "size": 65931,
+        "digit_counts": [
+          4476,
+          12511,
+          9511,
+          7657,
+          6702,
+          6150,
+          5098,
+          5064,
+          4545,
+          4217
+        ]
+      },
+      "val": {
+        "size": 7326,
+        "digit_counts": [
+          472,
+          1350,
+          1074,
+          840,
+          756,
+          732,
+          629,
+          531,
+          500,
+          442
+        ]
+      },
+      "test": {
+        "size": 26032,
+        "digit_counts": [
+          1744,
+          5099,
+          4149,
+          2882,
+          2523,
+          2384,
+          1977,
+          2019,
+          1660,
+          1595
+        ]
+      }
+    }
+  },
+  "pair_counts": {
+    "train": 2398620,
+    "val": 266520,
+    "test": 720640
+  },
+  "versions": {
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "sha256": {
+    "dataset_preview.png": "7b32ead03a56940850b62634cd5b665678b74fa7b984fa90c8306da560cf065d",
+    "mnist_evaluation.npy": "b99efcfbd5d1ee8ad846ac7e056f48c0d65727aa6183c0026bbb3e9636de1c50",
+    "mnist_figures.npy": "92506c6bd537f744c116064dc6f21784109586e041c6b1fe960867f4613dc05d",
+    "mnist_labels.npz": "ce820aed834056faaab1b77ddb1446f1ee9600426d0287641e1fdefe8bb0b589",
+    "mnist_prompts.npy": "fd49159876a575a6201179ff48107afc4ae818a6426c53427acc99bd24ed5b6d",
+    "mnist_splits.npz": "cf3dae452666252de8adc2864ee58eaf8486debb8b13e70652a3dc667b5bbff4",
+    "pairs_test.npy": "e54b2f7e0fdf18061cad629f3ab64f65de39e431cb00004987ba46fdf032fcf4",
+    "pairs_train.npy": "a6824f735bf7a99e14799a2d6710acaaa5476139eb7d59c8acf68cc0b40fb6b7",
+    "pairs_val.npy": "1715f9b70b2da42681496e3d8718031f60124a3f02560d88541a7a7b8b192382",
+    "svhn_evaluation.npy": "571bff0268f3440d2bb5d7a5a7212af21c05d1c8cbfa10307efb1123a7bd56ad",
+    "svhn_figures.npy": "2144e727bb6137704ddc2250132db5882ade508da7d78d108970fa720bf37e9e",
+    "svhn_labels.npz": "59ecd0d27409297e97624e18b90b4092d6af1556834e2b61f3332e4b4147ab1e",
+    "svhn_prompts.npy": "839a12d30251cfb738322f07b887083d23323676f523fd496461ac2e1ddc4e7e",
+    "svhn_splits.npz": "7a93a7e67bb8aa6d47437acfb7d226732d9b0797f4559cd04d1c1e2aa9c1e5cf"
+  }
+}
